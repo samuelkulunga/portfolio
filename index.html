@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon" />
+    <title>Samuel KULUNGA | Développeur Web Full Stack & UI/UX Designer à Kinshasa</title>
+    <meta name="description" content="Développeur web freelance basé à Kinshasa. Je conçois des sites modernes, rapides et responsives, avec un design sur mesure. Sites vitrines, blogs, boutiques et plus.">
+    <meta name="author" content="Samuel Kulunga">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="développeur web, freelance, site internet, design web, développeur junior, Kinshasa, site vitrine, création site, web designer, Samuel Kulunga">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#121212] bg-opacity-95 shadow-md">
+        <div class="container-fluid mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="/" class="logo text-primary text-xl font-bold">
+                    <img src="images/LOGO.webp" alt="samuel kulunga logo" width="148" height="75">
+                </a>
+                <!-- Navigation -->
+                <nav class="hidden lg:flex items-center justify-center space-x-4">
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors">À propos</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white transition-colors">Compétences</a>
+                    <a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projets</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-white transition-colors">Tarif</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                </nav>
+                <!-- Social Links -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189/" target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Profil LinkedIn de Samuel Kulunga"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-linkedin-fill ri-lg"></i>
+                    </a>
+                    <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Profil Facebook de Samuel Kulunga"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-facebook-fill ri-lg"></i>
+                    </a>
+                    <a href="https://x.com/samuelkulunga" target="_blank" 
+                        rel="noopener noreferrer" aria-label="Compte X de Samuel Kulunga"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-twitter-x-fill ri-lg"></i>
+                    </a>
+                    <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                        aria-label="Profil GitHub de Samuel Kulunga"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-github-fill ri-lg"></i>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button aria-label="Ouvrir le menu" class="lg:hidden w-10 h-10 flex items-center justify-center text-white">
+                    <i class="ri-menu-line ri-2x"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="fixed inset-0 bg-[#121212] z-40 hidden flex-col pt-20 px-6">
+        <nav class="flex flex-col space-y-6 text-center">
+            <a href="#services" class="text-white text-xl py-2">Services</a>
+            <a href="#projects" class="text-white text-xl py-2">Projets</a>
+            <a href="#skills" class="text-white text-xl py-2">Compétences</a>
+            <a href="#about" class="text-white text-xl py-2">À propos</a>
+            <a href="#pricing" class="text-white text-xl py-2">Pricing</a>
+            <a href="#contact" class="text-white text-xl py-2">Contact</a>
+        </nav>
+        <div class="flex justify-center space-x-6 mt-10">
+            <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil LinkedIn de Samuel Kulunga"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-linkedin-fill ri-lg"></i>
+            </a>
+            <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                aria-label="Profil facebook de Samuel Kulunga"
+                rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-facebook-fill ri-lg"></i>
+            </a>
+            <a href="https://x.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil x de Samuel Kulunga"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-twitter-x-fill ri-lg"></i>
+            </a>
+            <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil github de Samuel Kulunga"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-github-fill ri-lg"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/bg.webp" alt="Background" class="w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div class="container-fluid mx-auto px-4 py-8 z-10 relative">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                        Samuel <span class="gradient-text">KULUNGA</span>
+                    </h1>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Développeur Web <span class="gradient-text">Full Stack</span> & <span
+                            class="gradient-text">UI/UX Designer</span>
+                    </h2>
+                    <p class="text-xl text-[#CCCCCC] mb-6">
+                        Je transforme vos idées en expériences numériques exceptionnelles avec une approche créative et
+                        technique.
+                    </p>
+                    <div class="flex items-center text-[#999999] mb-8">
+                        <i class="ri-map-pin-line ri-lg mr-2"></i>
+                        <span>Kinshasa, République Démocratique du Congo</span>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://wa.me/243897325798"
+                            class="px-8 py-3 bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-[#121212] transition-colors !rounded-button whitespace-nowrap font-medium">
+                            <i class="ri-whatsapp-fill ri-lg"></i>
+                            Discutons de votre projet
+                        </a>
+                        <a href="#projects"
+                            class="px-8 py-3 bg-[#1A1A1A] text-white hover:bg-[#252525] transition-colors !rounded-button whitespace-nowrap font-medium">
+                            Voir mes projets
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="relative w-80 h-80 rounded-full bg-[#151515] overflow-hidden neon-border">
+                        <img src="images/sam1.webp" width="512" height="622" alt="Samuel KULUNGA Développeur Web & UI/UX Designer à Kinshasa" fetchpriority="high" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-8 bg-[#151515] ">
+        <div class="container-fluid mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">À Propos de Moi</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-3/5">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Qui suis-je?</h3>
+                    <p class="text-[#D1D1D1] mb-6">
+                        Passionné par le développement web et le design depuis plus de 5 ans, je combine expertise
+                        technique
+                        et sensibilité esthétique pour créer des expériences numériques qui se démarquent. Basé à
+                        Kinshasa,
+                        je travaille avec des clients du monde entier pour donner vie à leurs visions,
+                        qu’il s’agisse de sites vitrines, d’interfaces complexes ou d’applications sur mesure.
+                    </p>
+                    <p class="text-[#D1D1D1] mb-8">
+                        Mon approche est centrée sur l'utilisateur, avec un souci constant pour l’ergonomie,
+                        la performance et l’esthétique. Je crois fermement que chaque projet mérite une attention
+                        particulière,
+                        une écoute active et une solution sur mesure adaptée aux besoins réels.
+                    </p>
+                    <p class="text-[#D1D1D1] mb-8">
+                        Je m’investis pleinement dans chaque collaboration, en veillant à la cohérence visuelle,
+                        à la fluidité de navigation et à la qualité du code. Curieux et toujours en veille, j’aime
+                        explorer de nouvelles technologies
+                        et tendances pour proposer des solutions modernes et durables.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                        <div class="text-center">
+                            <h4 class="text-4xl font-bold text-primary mb-2">5+</h4>
+                            <p class="text-[#BBBBBB]">Années d'expérience</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-4xl font-bold text-primary mb-2">50+</h4>
+                            <p class="text-[#BBBBBB]">Projets complétés</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-4xl font-bold text-primary mb-2">30+</h4>
+                            <p class="text-[#BBBBBB]">Clients satisfaits</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-6">
+                        <a href="https://wa.me/243897325798"
+                            class="px-6 py-3 bg-primary text-[#121212] hover:bg-opacity-90 transition-colors !rounded-button whitespace-nowrap font-medium">
+                            <i class="ri-whatsapp-fill ri-lg"></i>
+                            Me contacter
+                        </a>
+                        <div class="flex items-center gap-4">
+                            <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189/" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Profil LinkedIn de Samuel Kulunga"
+                                class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                <i class="ri-linkedin-fill ri-lg"></i>
+                            </a>
+                            <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                                aria-label="Profil github de Samuel Kulunga"
+                                class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                <i class="ri-github-fill ri-lg"></i>
+                            </a>
+                            <a href="https://x.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                                aria-label="Profil xde Samuel Kulunga"
+                                class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                <i class="ri-twitter-x-fill ri-lg"></i>
+                            </a>
+                            <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Profil facebook de Samuel Kulunga"
+                                class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                <i class="ri-facebook-fill ri-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/5">
+                    <div class="relative rounded-lg overflow-hidden neon-border">
+                        <img src="images/sam2.webp" width="400" height="600" alt="Samuel KULUNGA | Développeur Web et UI/UX Designer à Kinshasa"
+                            class="w-full h-full object-cover object-top" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-8 bg-[#101010]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Mes Compétences</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-[#BBBBBB] mt-6 max-w-2xl mx-auto">
+                    Une combinaison unique de compétences techniques et créatives pour réaliser des projets web complets
+                    et innovants.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Development Skills -->
+                <div class="bg-[#1A1A1A] p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-white mb-6 flex items-center">
+                        <span class="w-10 h-10 flex items-center justify-center mr-3 bg-[#252525] rounded-lg">
+                            <i class="ri-code-s-slash-line ri-lg text-primary"></i>
+                        </span>
+                        Développement
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">HTML/CSS</span>
+                                <span class="text-primary">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">JavaScript</span>
+                                <span class="text-primary">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">React</span>
+                                <span class="text-primary">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">Node.js</span>
+                                <span class="text-primary">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">PHP/SYMFONY</span>
+                                <span class="text-primary">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Design Skills -->
+                <div class="bg-[#1A1A1A] p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-white mb-6 flex items-center">
+                        <span class="w-10 h-10 flex items-center justify-center mr-3 bg-[#252525] rounded-lg">
+                            <i class="ri-palette-line ri-lg text-primary"></i>
+                        </span>
+                        Design
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">UI Design</span>
+                                <span class="text-primary">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">UX Design</span>
+                                <span class="text-primary">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">Design Graphique</span>
+                                <span class="text-primary">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">Design Multimédia & Jeu Vidéo</span>
+                                <span class="text-primary">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Skills -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div
+                    class="bg-[#1A1A1A] p-4 lg:p-8 rounded-lg text-center border border-[#333333] hover:border-primary transition-colors group">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-[#252525] rounded-full">
+                        <i class="ri-database-2-line ri-2x text-primary"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Base de données</h4>
+                    <p class="text-[#BBBBBB]">MySQL, MongoDB, PostgreSQL</p>
+                </div>
+                <div
+                    class="bg-[#1A1A1A] p-4 lg:p-8 rounded-lg text-center border border-[#333333] hover:border-primary transition-colors group">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-[#252525] rounded-full">
+                        <i class="ri-server-line ri-2x text-primary"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-2">DevOps</h4>
+                    <p class="text-[#BBBBBB]">Git, Docker, AWS, Netlify</p>
+                </div>
+                <div
+                    class="bg-[#1A1A1A] p-4 lg:p-8 rounded-lg text-center border border-[#333333] hover:border-primary transition-colors group">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-[#252525] rounded-full">
+                        <i class="ri-smartphone-line ri-2x text-primary"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Responsive</h4>
+                    <p class="text-[#BBBBBB]">Mobile-first, Adaptative Design</p>
+                </div>
+                <div
+                    class="bg-[#1A1A1A] p-6 rounded-lg text-center border border-[#333333] hover:border-primary transition-colors group">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-[#252525] rounded-full">
+                        <i class="ri-translate-2 ri-2x text-primary"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Langues</h4>
+                    <p class="text-[#BBBBBB]">Français, Anglais, Lingala</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="py-8 bg-[#0F0F0F]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Mes Services</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-[#BBBBBB] mt-6 max-w-2xl mx-auto">
+                    Des solutions numériques complètes pour donner vie à vos projets, de la conception à la réalisation.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Web Development -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] rounded-lg p-4 lg:p-8 border border-[#333333] hover:border-primary transition-colors group">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-[#252525] rounded-lg mb-6 group-hover:bg-primary/10">
+                        <i class="ri-code-s-slash-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Développement Web</h3>
+                    <p class="text-[#BBBBBB] mb-6">
+                        Création de sites web et d'applications performants, modernes et sécurisés, adaptés à vos
+                        besoins spécifiques.
+                    </p>
+                    <ul class="space-y-3 mb-4">
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Sites web responsives
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Applications web dynamiques
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            E-commerce sur mesure
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Intégration API
+                        </li>
+                    </ul>
+                </div>
+                <!-- UI/UX Design -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] rounded-lg p-4 lg:p-8 border border-[#333333] hover:border-primary transition-colors group">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-[#252525] rounded-lg mb-6 group-hover:bg-primary/10">
+                        <i class="ri-layout-4-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">UI/UX Design</h3>
+                    <p class="text-[#BBBBBB] mb-6">
+                        Création d'interfaces utilisateur intuitives et d'expériences utilisateur engageantes qui
+                        captivent votre audience.
+                    </p>
+                    <ul class="space-y-3 mb-4">
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Design d'interface moderne
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Prototypage interactif
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Tests utilisateurs
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Design System
+                        </li>
+                    </ul>
+                </div>
+                <!-- SEO Optimization -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] mx-auto rounded-lg p-4 lg:p-8 border border-[#333333] hover:border-primary transition-colors group">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-[#252525] rounded-lg mb-6 group-hover:bg-primary/10">
+                        <i class="ri-line-chart-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Optimisation SEO</h3>
+                    <p class="text-[#BBBBBB] mb-6">
+                        Amélioration de la visibilité de votre site web dans les moteurs de recherche pour attirer plus
+                        de trafic qualifié.
+                    </p>
+                    <ul class="space-y-3 mb-4">
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Audit SEO complet
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Optimisation technique
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Stratégie de contenu
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Suivi des performances
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-8 bg-[#131313]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Mes Projets Récents</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-[#BBBBBB] mt-6 max-w-2xl mx-auto">
+                    Découvrez une sélection de mes réalisations les plus récentes et les plus représentatives de mon
+                    travail.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Project 1 -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] rounded-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="images/projets.webp" alt="E-commerce de luxe" loading="lazy"
+                            class="w-full h-full object-cover object-top">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#"
+                                class="px-6 py-2 bg-primary text-[#121212] !rounded-button whitespace-nowrap font-medium">Voir
+                                le projet</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">Application web de gestion de tâches</h3>
+                        <p class="text-[#BBBBBB] mb-4">
+                            Application web de gestion de tâches développée pour permettre aux utilisateurs de créer,
+                            organiser et suivre facilement leurs tâches quotidiennes. 
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">UX/UI design</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">React.js</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] rounded-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="images/petzuri.webp" alt="Dashboard Analytics" loading="lazy"
+                            class="w-full h-full object-cover object-top">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#"
+                                class="px-6 py-2 bg-primary text-[#121212] !rounded-button whitespace-nowrap font-medium">
+                                Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">Mini Site Vitrine de Chiens</h3>
+                        <p class="text-[#BBBBBB] mb-4">
+                            Mini site vitrine développé pour présenter différentes races de chiens de
+                            manière attractive et responsive. Le site propose des fiches descriptives avec images, 
+                            caractéristiques, et informations essentielles sur chaque race. 
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">HTML/CSS/JS</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">MYSQL</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">PHP/SYMFONY</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">REST API</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] rounded-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="images/myportfolio.webp" alt="Application Fitness" loading="lazy"
+                            class="w-full h-full object-cover object-top">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#"
+                                class="px-6 py-2 bg-primary text-[#121212] !rounded-button whitespace-nowrap font-medium">
+                                Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">Mon Portfolio</h3>
+                        <p class="text-[#BBBBBB] mb-4">
+                            Site portfolio personnel conçu pour présenter mes compétences, projets et services en 
+                            tant que développeur web et designer. 
+                            Il comprend plusieurs sections : accueil, à propos, projets, services, témoignages et contact. 
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">HTML/CSS/JS</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">TAILWIND CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div style="max-width: 380px;"
+                    class="bg-[#1A1A1A] rounded-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="images/dashboard.webp" alt="Immobilier Premium" loading="lazy"
+                            class="w-full h-full object-cover object-top">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <a href="#"
+                                class="px-6 py-2 bg-primary text-[#121212] !rounded-button whitespace-nowrap font-medium">
+                                Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">Dashboard admin pour une application web</h3>
+                        <p class="text-[#BBBBBB] mb-4">
+                            Tableau de bord d’administration développé pour gérer les contenus, utilisateurs et 
+                            statistiques d’une application web. L’interface permet une visualisation claire des données grâce à 
+                            des graphiques dynamiques, des tableaux interactifs, des filtres et des actions rapides.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">Angular</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">Three.js</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-[#252525] text-[#CCCCCC] text-sm rounded-full">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-8 bg-[#111111]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Mes Tarifs</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-[#BBBBBB] mt-6 max-w-2xl mx-auto">
+                    Des solutions adaptées à vos besoins et à votre budget, avec une transparence totale sur les
+                    prestations incluses.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1D1D1D] rounded-lg overflow-hidden border border-[#333333] transition-transform hover:transform hover:scale-105">
+                    <div class="p-8 border-b border-[#333333]">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Essentiel</h3>
+                        <p class="text-[#BBBBBB] mb-6">Idéal pour independants qui veut une presence en ligne simple</p>
+                        <div class="flex items-end">
+                            <span class="text-4xl font-bold text-primary">$ 150</span>
+                            <span class="text-[#BBBBBB] ml-2">/ projet</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Site web 1 page</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Design responsive</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Intégration réseaux sociaux</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">SEO de base</span>
+                            </li>
+                            <li class="flex items-start text-[#777777]">
+                                <i class="ri-close-line ri-lg mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Formulaire de contact</span>
+                            </li>
+                            <li class="flex items-start text-[#777777]">
+                                <i class="ri-close-line ri-lg mt-1 mr-3"></i>
+                                <span>CMS personnalisé</span>
+                            </li>
+                            <li class="flex items-start text-[#777777]">
+                                <i class="ri-close-line ri-lg mt-1 mr-3"></i>
+                                <span>E-commerce</span>
+                            </li>
+                            <li class="flex items-start text-[#777777]">
+                                <i class="ri-close-line ri-lg mt-1 mr-3"></i>
+                                <span>Maintenance mensuelle</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="https://wa.me/243897325798"
+                                class="block w-full py-3 bg-transparent border border-primary text-primary hover:bg-primary hover:text-[#121212] transition-colors text-center !rounded-button whitespace-nowrap font-medium">
+                                <i class="ri-whatsapp-fill ri-lg"></i>
+                                Choisir ce forfait
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Standard Plan -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1D1D1D] rounded-lg overflow-hidden border border-primary transition-transform hover:transform hover:scale-105 relative z-10 shadow-lg shadow-primary/20">
+                    <div class="absolute top-0 right-0 bg-primary text-[#121212] px-4 py-1 text-sm font-medium">
+                        Populaire
+                    </div>
+                    <div class="p-8 border-b border-[#333333]">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Professionnel</h3>
+                        <p class="text-[#BBBBBB] mb-6">Idéal pour les petites entreprises, Entrepreneur et startups</p>
+                        <div class="flex items-end">
+                            <span class="text-4xl font-bold text-primary">$ 450</span>
+                            <span class="text-[#BBBBBB] ml-2">/ projet</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Site web jusqu'à 10 pages</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Design responsive premium</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Formulaires avancés</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Intégration réseaux sociaux</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">SEO avancé</span>
+                            </li>
+                            <li class="flex items-start text-[#777777]">
+                                <i class="ri-close-line ri-lg mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">CMS personnalisé</span>
+                            </li>
+                            <li class="flex items-start text-[#777777]">
+                                <i class="ri-close-line ri-lg mt-1 mr-3"></i>
+                                <span>E-commerce complet</span>
+                            </li>
+                            <li class="flex items-start text-[#777777]">
+                                <i class="ri-close-line ri-lg mt-1 mr-3"></i>
+                                <span>Maintenance premium</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="https://wa.me/243897325798"
+                                class="block w-full py-3 bg-primary text-[#121212] hover:bg-opacity-90 transition-colors text-center !rounded-button whitespace-nowrap font-medium">
+                                <i class="ri-whatsapp-fill ri-lg"></i>
+                                Choisir ce forfait
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Premium Plan -->
+                <div style="max-width: 380px;"
+                    class=" mx-auto bg-[#1D1D1D] rounded-lg overflow-hidden border border-[#333333] transition-transform hover:transform hover:scale-105">
+                    <div class="p-8 border-b border-[#333333]">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Business</h3>
+                        <p class="text-[#BBBBBB] mb-6">Solution complète pour de site robuste</p>
+                        <div class="flex items-end">
+                            <span class="text-4xl font-bold text-primary">$ 15</span>
+                            <span class="text-[#BBBBBB] ml-2">/ Heure</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Site web illimité</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Design sur mesure premium</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Système complet de formulaires</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Intégration API complète</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">SEO premium + Analytics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">CMS personnalisé avancé</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">E-commerce complet</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
+                                <span class="text-[#D1D1D1]">Maintenance 6 mois incluse</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="https://wa.me/243897325798"
+                                class="block w-full py-3 bg-transparent border border-primary text-primary hover:bg-primary hover:text-[#121212] transition-colors text-center !rounded-button whitespace-nowrap font-medium">
+                                <i class="ri-whatsapp-fill ri-lg"></i>
+                                Obtenez un devis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 bg-[#1A1A1A] p-8 rounded-lg">
+                <h3 class="text-2xl font-semibold text-white mb-6 text-center">Vous avez un projet spécifique?</h3>
+                <p class="text-[#BBBBBB] text-center mb-4 max-w-2xl mx-auto">
+                    Chaque projet est unique et peut nécessiter une approche personnalisée. N'hésitez pas à me contacter
+                    pour discuter de vos besoins spécifiques et obtenir un devis sur mesure.
+                </p>
+                <div class="text-center">
+                    <a href="https://wa.me/243897325798"
+                        class="inline-flex items-center px-8 py-2 bg-primary text-[#121212] hover:bg-opacity-90 transition-colors !rounded-button font-medium">
+                        <i class="ri-whatsapp-fill ri-lg"></i>
+                        Demander un devis personnalisé
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-8 bg-[#0F0F0F]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Témoignages</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-[#BBBBBB] mt-6 max-w-2xl mx-auto">
+                    Découvrez ce que mes clients disent de mon travail et de leur expérience de collaboration.
+                </p>
+            </div>
+            <div class="relative">
+                <div class="testimonials-slider overflow-hidden">
+                    <div class="testimonials-track flex transition-transform duration-300">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+                            <div class="bg-[#1A1A1A] p-4 rounded-lg h-full border border-[#333333]">
+                                <div class="flex items-center mb-6">
+                                    <img src="images/test-img.webp" alt="Marie Dubois"
+                                        class="w-16 h-16 rounded-full object-cover object-top" loading="lazy">
+                                    <div class="ml-4">
+                                        <div class="text-white font-semibold">Marie Kalenga</div>
+                                        <p class="text-[#BBBBBB]">Entrepreneur</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#D1D1D1] mb-6">
+                                    "Professionnalisme, réactivité et écoute, il a su transformer une idée vague en un
+                                    projet concret et abouti. Je recommande vivement ses services!"
+                                </p>
+                                <div class="flex text-primary">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+                            <div class="bg-[#1A1A1A] p-4 rounded-lg h-full border border-[#333333]">
+                                <div class="flex items-center mb-6">
+                                    <img src="images/test-img.webp" alt="Jean Makeba"
+                                        class="w-16 h-16 rounded-full object-cover object-top" loading="lazy">
+                                    <div class="ml-4">
+                                        <div class="text-white font-semibold">Jean Makeba</div>
+                                        <p class="text-[#BBBBBB]">Fondateur, StyleFusion</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#D1D1D1] mb-6">
+                                    "La collaboration avec Samuel a été un véritable plaisir. Son professionnalisme et
+                                    sa capacité à traduire nos idées en solutions concrètes ont été remarquables. Je le
+                                    recommande vivement."
+                                </p>
+                                <div class="flex text-primary">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+                            <div class="bg-[#1A1A1A] p-4 rounded-lg h-full border border-[#333333]">
+                                <div class="flex items-center mb-6">
+                                    <img src="images/test-img.webp" alt="Marie Dubois"
+                                        class="w-16 h-16 rounded-full object-cover object-top" loading="lazy">
+                                    <div class="ml-4">
+                                        <div class="text-white font-semibold">Marie Dubois</div>
+                                        <p class="text-[#BBBBBB]">CEO</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#D1D1D1] mb-6">
+                                    "Samuel a transformé notre vision en une réalité numérique exceptionnelle. Son
+                                    expertise technique et sa créativité ont dépassé nos attentes. Un vrai professionnel
+                                    qui comprend les besoins de ses clients."
+                                </p>
+                                <div class="flex text-primary">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+                            <div class="bg-[#1A1A1A] p-4 rounded-lg h-full border border-[#333333]">
+                                <div class="flex items-center mb-6">
+                                    <img src="images/test-img.webp" alt="Sophie Mbala"
+                                        class="w-16 h-16 rounded-full object-cover object-top" loading="lazy">
+                                    <div class="ml-4">
+                                        <div class="text-white font-semibold">Sophie Mbala</div>
+                                        <p class="text-[#BBBBBB]">Directrice Marketing</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#D1D1D1] mb-6">
+                                    "Un talent exceptionnel doublé d'une grande écoute. Samuel Kulunga a su capturer
+                                    l'essence
+                                    de notre marque et la traduire en une expérience digitale impressionnante. Un
+                                    partenaire de confiance."
+                                </p>
+                                <div class="flex text-primary">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 5 -->
+                        <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+                            <div class="bg-[#1A1A1A] p-4 rounded-lg h-full border border-[#333333]">
+                                <div class="flex items-center mb-6">
+                                    <img src="images/test-img.webp" alt="Jean Lemba"
+                                        class="w-16 h-16 rounded-full object-cover object-top" loading="lazy">
+                                    <div class="ml-4">
+                                        <div class="text-white font-semibold">Jean Lemba</div>
+                                        <p class="text-[#BBBBBB]">PDG</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#D1D1D1] mb-6">
+                                    "Travailler avec Mr Kulunga a été une véritable chance. Il a parfaitement compris nos
+                                    besoins et a su proposer des solutions créatives,
+                                    efficaces et livrées dans les délais. Le résultat final a largement dépassé nos
+                                    attentes."
+                                </p>
+                                <div class="flex text-primary">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button aria-label="Voir le témoignage précédent" class="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-[#252525] text-white rounded-full hover:bg-primary hover:text-[#121212] transition-colors z-10 prev-button">
+                    <i class="ri-arrow-left-s-line ri-lg"></i>
+                </button>
+                <button aria-label="Voir le témoignage suivant"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-[#252525] text-white rounded-full hover:bg-primary hover:text-[#121212] transition-colors z-10 next-button">
+                    <i class="ri-arrow-right-s-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-8 bg-[#131313]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Contactez-Moi</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-[#BBBBBB] mt-6 max-w-2xl mx-auto">
+                    Vous avez un projet en tête? N'hésitez pas à me contacter pour en discuter et voir comment je peux
+                    vous aider à le concrétiser.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="w-full md:w-1/2">
+                    <form id="contact-form" class="space-y-6" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <div>
+                            <label for="name" class="block text-[#CCCCCC] mb-2">Nom complet</label>
+                            <input type="text" id="name" name="username" required class="w-full px-4 py-3 bg-[#1F1F1F] border border-[#333333] rounded focus:outline-none focus:border-primary text-white" placeholder="Votre nom">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-[#CCCCCC] mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-[#1F1F1F] border border-[#333333] rounded focus:outline-none focus:border-primary text-white" placeholder="votre email">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-[#CCCCCC] mb-2">Message</label>
+                            <textarea id="message" name="message" required rows="5" class="w-full px-4 py-3 bg-[#1F1F1F] border border-[#333333] rounded focus:outline-none focus:border-primary text-white resize-none" placeholder="Votre message..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full py-3 bg-primary text-[#121212] hover:bg-opacity-90 transition-colors !rounded-button whitespace-nowrap font-medium">
+                                Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="bg-[#1A1A1A] p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-semibold text-white mb-6">Informations de contact</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-[#252525] rounded-lg mr-4">
+                                    <i class="ri-map-pin-line ri-lg text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-medium mb-1">Localisation</div>
+                                    <p class="text-[#BBBBBB]">Kinshasa, République Démocratique du Congo</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-[#252525] rounded-lg mr-4">
+                                    <i class="ri-mail-line ri-lg text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-medium mb-1">Email</div>
+                                    <p class="text-[#BBBBBB]">
+                                        <a href="mailto:contact@samuelkulunga.com">contact@samuelkulunga.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-[#252525] rounded-lg mr-4">
+                                    <i class="ri-phone-line ri-lg text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-medium mb-1">Téléphone et WhatsaApp</div>
+                                    <p class="text-[#BBBBBB]">
+                                        <a href="tel:+243897325798" aria-label="numero de telephone de Samuel Kulunga">+243 89 7325 798</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-[#252525] rounded-lg mr-4">
+                                    <i class="ri-time-line ri-lg text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-medium mb-1">Disponibilité</div>
+                                    <p class="text-[#BBBBBB]">Lundi - Samedi, 7h - 18h</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <div class="text-white font-medium mb-4">Suivez-moi</div>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Profil linkedin de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-linkedin-fill ri-lg"></i>
+                                </a>
+                                <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Profil facebook de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-facebook-fill ri-lg"></i>
+                                </a>
+                                <a href="https://x.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Profil x de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-twitter-x-fill ri-lg"></i>
+                                </a>
+                                <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Profil GitHub de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-github-fill ri-lg"></i>
+                                </a>
+                                <a href="https://g.co/kgs/XJ6k3NV" target="_blank"
+                                    aria-label="Profil my google business de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-google-fill ri-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-12 bg-[#090909]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <a href="/" class="text-white text-2xl font-bold mb-6 md:mb-0">
+                    <span class="gradient-text">Samuel KULUNGA</span>
+                </a>
+                <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+                    <a href="#about" class="text-white">À propos</a>
+                    <a href="#skills" class="text-white">Compétences</a>
+                    <a href="#services" class="text-white">Services</a>
+                    <a href="#projects" class="text-white">Projets</a>
+                    <a href="#pricing" class="text-white">Tarif</a>
+                    <a href="#contact" class="text-white">Contact</a>
+                </nav>
+            </div>
+            <hr class="border-[#333333] mb-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white mb-4 md:mb-0">
+                    &copy; 2024 <a href="http://samuelkulunga.com">Samuel KULUNGA.</a> Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" aria-label="button up" id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-[#121212] rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 shadow-lg">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </a>
+
+    <script id="mobileMenuToggle">
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.querySelector('button.lg\\:hidden');
+            const mobileMenu = document.querySelector('.fixed.inset-0.bg-\\[\\#121212\\]');
+            menuButton.addEventListener('click', function () {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('flex');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    document.body.style.overflow = '';
+                }
+            });
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    document.body.style.overflow = '';
+                });
+            });
+        });
+    </script>
+
+    <script id="backToTopButton">
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.getElementById('backToTop');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 500) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                }
+            });
+            backToTopButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script id="testimonialsSlider">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.testimonials-track');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const prevButton = document.querySelector('.prev-button');
+            const nextButton = document.querySelector('.next-button');
+            let currentIndex = 0;
+            const cardWidth = 100 / (window.innerWidth >= 768 ? 3 : 1);
+            const maxIndex = cards.length - (window.innerWidth >= 768 ? 3 : 1);
+            function updateSliderPosition() {
+                track.style.transform = `translateX(-${currentIndex * cardWidth}%)`;
+            }
+            function updateButtonsState() {
+                prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
+                prevButton.style.cursor = currentIndex === 0 ? 'not-allowed' : 'pointer';
+                nextButton.style.opacity = currentIndex === maxIndex ? '0.5' : '1';
+                nextButton.style.cursor = currentIndex === maxIndex ? 'not-allowed' : 'pointer';
+            }
+            prevButton.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSliderPosition();
+                    updateButtonsState();
+                }
+            });
+            nextButton.addEventListener('click', () => {
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateSliderPosition();
+                    updateButtonsState();
+                }
+            });
+            window.addEventListener('resize', () => {
+                currentIndex = 0;
+                updateSliderPosition();
+                updateButtonsState();
+            });
+            updateButtonsState();
+        });
+    </script>
+
+    <script id="smoothScrolling">
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

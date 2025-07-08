@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon" />
+    <title>Samuel KULUNGA | Développeur Web Full Stack & UI/UX Designer à Kinshasa</title>
+    <meta name="description"
+        content="Développeur web freelance basé à Kinshasa. Je conçois des sites modernes, rapides et responsives, avec un design sur mesure. Sites vitrines, blogs, boutiques et plus.">
+    <meta name="author" content="Samuel Kulunga">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="développeur web, freelance, site internet, design web, développeur junior, Kinshasa, site vitrine, création site, web designer, Samuel Kulunga">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #error-404 {
+            position: relative;
+            height: 80vh;
+
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#121212] bg-opacity-95 shadow-md">
+        <div class="container-fluid mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="/" class="logo text-primary text-xl font-bold">
+                    <img src="images/LOGO.webp" alt="samuel kulunga logo" width="150" height="75">
+                </a>
+                <!-- Navigation -->
+                <nav class="hidden lg:flex items-center justify-center space-x-4">
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors">À propos</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white transition-colors">Compétences</a>
+                    <a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projets</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-white transition-colors">Tarif</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                </nav>
+                <!-- Social Links -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-linkedin-fill ri-lg"></i>
+                    </a>
+                    <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-facebook-fill ri-lg"></i>
+                    </a>
+                    <a href="https://x.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-twitter-x-fill ri-lg"></i>
+                    </a>
+                    <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-github-fill ri-lg"></i>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden w-10 h-10 flex items-center justify-center text-white">
+                    <i class="ri-menu-line ri-2x"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="fixed inset-0 bg-[#121212] z-40 hidden flex-col pt-20 px-6">
+        <nav class="flex flex-col space-y-6 text-center">
+            <a href="#services" class="text-white text-xl py-2">Services</a>
+            <a href="#projects" class="text-white text-xl py-2">Projets</a>
+            <a href="#skills" class="text-white text-xl py-2">Compétences</a>
+            <a href="#about" class="text-white text-xl py-2">À propos</a>
+            <a href="#pricing" class="text-white text-xl py-2">Pricing</a>
+            <a href="#contact" class="text-white text-xl py-2">Contact</a>
+        </nav>
+        <div class="flex justify-center space-x-6 mt-10">
+            <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189" target="_blank" rel="noopener noreferrer"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-linkedin-fill ri-lg"></i>
+            </a>
+            <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-facebook-fill ri-lg"></i>
+            </a>
+            <a href="https://x.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-twitter-x-fill ri-lg"></i>
+            </a>
+            <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-github-fill ri-lg"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="error-404" class="error-404">
+        <div class="container content">
+            <h1 class="text-4xl font-bold text-primary mb-4">404 - Page non trouvée</h1>
+            <p class="text-gray-700 mb-6">Désolé, la page que vous cherchez n’existe pas.</p>
+            <a href="/" class="bg-secondary text-white px-4 py-2 rounded hover:bg-blue-700">Retour à l’accueil</a>
+        </div>
+    </div>
+    
+
+    <footer class="py-12 bg-[#090909]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <a href="/" class="text-white text-2xl font-bold mb-6 md:mb-0">
+                    <span class="gradient-text">Samuel KULUNGA</span>
+                </a>
+                <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+                    <a href="#about" class="text-[#999999] hover:text-white transition-colors">À propos</a>
+                    <a href="#skills" class="text-[#999999] hover:text-white transition-colors">Compétences</a>
+                    <a href="#services" class="text-[#999999] hover:text-white transition-colors">Services</a>
+                    <a href="#projects" class="text-[#999999] hover:text-white transition-colors">Projets</a>
+                    <a href="#pricing" class="text-[#999999] hover:text-white transition-colors">Tarif</a>
+                    <a href="#contact" class="text-[#999999] hover:text-white transition-colors">Contact</a>
+                </nav>
+            </div>
+            <hr class="border-[#333333] mb-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#666666] mb-4 md:mb-0">
+                    &copy; 2024 Samuel KULUNGA. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop"
+        class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-[#121212] rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 shadow-lg">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </a>
+
+    <script id="particlesAnimation">
+        document.addEventListener('DOMContentLoaded', function () {
+            const particlesContainer = document.querySelector('.particles');
+            const particleCount = 50;
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                // Random size between 2px and 6px
+                const size = Math.random() * 4 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                // Random opacity
+                particle.style.opacity = Math.random() * 0.5 + 0.1;
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+
+    <script id="mobileMenuToggle">
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.querySelector('button.lg\\:hidden');
+            const mobileMenu = document.querySelector('.fixed.inset-0.bg-\\[\\#121212\\]');
+            menuButton.addEventListener('click', function () {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('flex');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    document.body.style.overflow = '';
+                }
+            });
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    document.body.style.overflow = '';
+                });
+            });
+        });
+    </script>
+    <script id="backToTopButton">
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.getElementById('backToTop');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 500) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                }
+            });
+            backToTopButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script id="testimonialsSlider">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.testimonials-track');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const prevButton = document.querySelector('.prev-button');
+            const nextButton = document.querySelector('.next-button');
+            let currentIndex = 0;
+            const cardWidth = 100 / (window.innerWidth >= 768 ? 3 : 1);
+            const maxIndex = cards.length - (window.innerWidth >= 768 ? 3 : 1);
+            function updateSliderPosition() {
+                track.style.transform = `translateX(-${currentIndex * cardWidth}%)`;
+            }
+            function updateButtonsState() {
+                prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
+                prevButton.style.cursor = currentIndex === 0 ? 'not-allowed' : 'pointer';
+                nextButton.style.opacity = currentIndex === maxIndex ? '0.5' : '1';
+                nextButton.style.cursor = currentIndex === maxIndex ? 'not-allowed' : 'pointer';
+            }
+            prevButton.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSliderPosition();
+                    updateButtonsState();
+                }
+            });
+            nextButton.addEventListener('click', () => {
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateSliderPosition();
+                    updateButtonsState();
+                }
+            });
+            window.addEventListener('resize', () => {
+                currentIndex = 0;
+                updateSliderPosition();
+                updateButtonsState();
+            });
+            updateButtonsState();
+        });
+    </script>
+
+    <script id="smoothScrolling">
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
