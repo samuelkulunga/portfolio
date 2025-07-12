@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon" />
+    <link rel="canonical" href="https://samuelkulunga.com">
+    <title>A propos de Samuel KULUNGA | Développeur Web Full Stack & UI/UX Designer à Kinshasa</title>
+    <meta name="description" 
+        content="Je suis Samuel Kulunga, développeur web full stack et UI/UX designer freelance, 
+                basé à Kinshasa, République Démocratique du Congo. Je conçois et développe des sites web modernes, 
+                performants et sur mesure pour les entrepreneurs, artisans, PME et startups locales et internationales.">
+    <meta name="author" content="Samuel Kulunga">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="développeur web, freelance, site internet, design web, développeur junior, Kinshasa, site vitrine, création site, web designer, Samuel Kulunga">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#121212] bg-opacity-95 shadow-md">
+        <div class="container-fluid mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="/" class="logo text-primary text-xl font-bold">
+                    <img src="images/LOGO.webp" alt="samuel kulunga logo" width="148" height="75">
+                </a>
+                <!-- Navigation -->
+                <nav class="hidden lg:flex items-center justify-center space-x-4">
+                    <a href="/" class="text-gray-300 hover:text-white transition-colors">Accueil</a>
+                    <a href="/#skills" class="text-gray-300 hover:text-white transition-colors">Compétences</a>
+                    <a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="/#projects" class="text-gray-300 hover:text-white transition-colors">Projets</a>
+                    <a href="/#pricing" class="text-gray-300 hover:text-white transition-colors">Tarif</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                </nav>
+                <!-- Social Links -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189/" target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Profil LinkedIn de Samuel Kulunga"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-linkedin-fill ri-lg"></i>
+                    </a>
+                    <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Profil Facebook de Samuel Kulunga"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-facebook-fill ri-lg"></i>
+                    </a>
+                    <a href="https://x.com/samuelkulunga" target="_blank" 
+                        rel="noopener noreferrer" aria-label="Compte X de Samuel Kulunga"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-twitter-x-fill ri-lg"></i>
+                    </a>
+                    <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                        aria-label="Profil GitHub de Samuel Kulunga"
+                        class="w-8 h-8 flex items-center justify-center text-text-white hover:text-white transition-colors">
+                        <i class="ri-github-fill ri-lg"></i>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button aria-label="Ouvrir le menu" class="lg:hidden w-10 h-10 flex items-center justify-center text-white">
+                    <i class="ri-menu-line ri-2x"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="fixed inset-0 bg-[#121212] z-40 hidden flex-col pt-20 px-6">
+        <nav class="flex flex-col space-y-6 text-center">
+            <a href="/" class="text-white text-xl py-2">Acceuil</a>
+            <a href="#services" class="text-white text-xl py-2">Services</a>
+            <a href="/#projects" class="text-white text-xl py-2">Projets</a>
+            <a href="/#skills" class="text-white text-xl py-2">Compétences</a>
+            <a href="/#pricing" class="text-white text-xl py-2">Pricing</a>
+            <a href="#contact" class="text-white text-xl py-2">Contact</a>
+        </nav>
+        <div class="flex justify-center space-x-6 mt-10">
+            <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil LinkedIn de Samuel Kulunga"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-linkedin-fill ri-lg"></i>
+            </a>
+            <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                aria-label="Profil facebook de Samuel Kulunga"
+                rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-facebook-fill ri-lg"></i>
+            </a>
+            <a href="https://x.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil x de Samuel Kulunga"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-twitter-x-fill ri-lg"></i>
+            </a>
+            <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                aria-label="Profil github de Samuel Kulunga"
+                class="w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-github-fill ri-lg"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-8 bg-[#151515] ">
+        <div class="container-fluid mx-auto px-4">
+            
+            <div class="flex flex-col md:flex-row items-center gap-8 mt-12">
+                <div class="w-full md:w-3/5">
+                    <div class="mb-8">
+                        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">À Propos de Samuel KULUNGA</h1>
+                        <div class="w-20 h-1 bg-primary"></div>
+                    </div>
+                    <p class="text-[#D1D1D1] mb-6">
+                        Je suis Samuel Kulunga, développeur web full stack et UI/UX designer freelance, 
+                        basé à Kinshasa, République Démocratique du Congo. Je conçois et développe des sites web modernes, 
+                        performants et sur mesure pour les entrepreneurs, artisans, PME et startups locales et internationales. 
+                        Mon objectif est de transformer vos idées en solutions digitales efficaces, optimisées pour le référencement (SEO), 
+                        l’expérience utilisateur (UX) et les résultats concrets.
+                    </p>
+                    <p class="text-[#D1D1D1] mb-8">
+                        Mon approche est centrée sur l'utilisateur, avec un souci constant pour l’ergonomie,
+                        la performance et l’esthétique. Je crois fermement que chaque projet mérite une attention
+                        particulière,
+                        une écoute active et une solution sur mesure adaptée aux besoins réels.
+                    </p>
+                    <p class="text-[#D1D1D1] mb-8">
+                        Je m’investis pleinement dans chaque collaboration, en veillant à la cohérence visuelle,
+                        à la fluidité de navigation et à la qualité du code. Curieux et toujours en veille, j’aime
+                        explorer de nouvelles technologies
+                        et tendances pour proposer des solutions modernes et durables.
+                    </p>
+                </div>
+                <div class="w-full md:w-2/5">
+                    <div class="relative rounded-lg overflow-hidden neon-border">
+                        <img src="images/sam2.webp" width="400" height="600" alt="Samuel KULUNGA | Développeur Web et UI/UX Designer à Kinshasa"
+                            class="w-full h-full object-cover object-top" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section id="parcours" class="py-8 bg-[#0F0F0F]">
+        <div class="container-fluid mx-auto px-4">
+            
+            <div class="flex flex-col md:flex-row items-center gap-8 mt-12">
+                <div class="w-full">
+                    <div class="mb-8">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Mon parcours</h2>
+                        <div class="w-20 h-1 bg-primary"></div>
+                    </div>
+                    <p class="text-[#D1D1D1] mb-6">
+                        Avant de devenir développeur web et designer UI/UX, j’ai suivi un parcours universitaire en 
+                        gestion financière. Titulaire d’un bac+3 en gestion financière des entreprises, 
+                        j’ai acquis des bases solides en analyse, rigueur, gestion de projets et compréhension 
+                        des enjeux économiques des entreprises. Ce qui m'a permis de travailler dans le secteur bancaire
+                        pendant plus de 3 ans.
+                    </p>
+                    <p class="text-[#D1D1D1] mb-8">
+                        Mon aventure dans le développement web a commencé en 2020, pendant la période du confinement. 
+                        À l’époque, je cherchais à donner un nouveau sens à ma carrière. Curieux de nature et passionné 
+                        par les outils numériques, j’ai commencé à apprendre HTML, CSS et JavaScript en autodidacte, 
+                        à travers des plateformes comme freeCodeCamp, YouTube, et des projets personnels.
+                    </p>
+                    <p class="text-[#D1D1D1] mb-8">
+                        Ce qui n’était au départ qu’une exploration s’est vite transformé en vraie passion, puis en
+                        métier. J’ai progressivement élargi mes compétences vers le back-end avec Symfony,
+                        la gestion de bases de données MySQL, et le design UI/UX avec Figma.
+                    </p>
+
+                    <p class="text-[#D1D1D1] mb-8">
+                        Je crois en l’apprentissage permanent. Je me forme constamment aux nouvelles technologies, 
+                        aux tendances en design, et aux meilleures pratiques en SEO et accessibilité web. 
+                        Plutôt que de m’arrêter aux cours théoriques, j’ai rapidement commencé à travailler 
+                        sur des projets concrets, d’abord personnels, puis pour des clients locaux à Kinshasa. 
+                        Cette approche terrain m’a permis de développer une vraie capacité d’écoute, 
+                        une bonne gestion de projet, une méthodologie de travail claire, rigoureuse et orientée résultats
+                    </p>
+
+                    <p class="text-[#D1D1D1] mb-8">
+                        Aujourd’hui, je suis un freelance accompli avec plus de 4 ans d’expérience et une vision claire :
+                        aider les entreprises de Kinshasa et d’ailleurs à se digitaliser grâce à des solutions web modernes, 
+                        esthétiques et efficaces. Je suis convaincu que la technologie peut transformer positivement 
+                        notre quotidien — et qu’un site bien pensé peut être un véritable levier de croissance,
+                        même pour les petites structures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-8 bg-[#151515]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ceux que je propose à mes clients</h2>
+                <div class="w-20 h-1 bg-primary"></div>
+                <p class="text-[#BBBBBB] mt-6">
+                    Des solutions numériques complètes pour donner vie à vos projets, de la conception à la réalisation.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Web Development -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] rounded-lg p-4 lg:p-8 border border-[#333333] hover:border-primary transition-colors group">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-[#252525] rounded-lg mb-6 group-hover:bg-primary/10">
+                        <i class="ri-code-s-slash-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Développement Web</h3>
+                    <p class="text-[#BBBBBB] mb-6">
+                        Création de sites web et d'applications performants, modernes et sécurisés, adaptés à vos
+                        besoins spécifiques.
+                    </p>
+                    <ul class="space-y-3 mb-4">
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Sites web responsives
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Applications web dynamiques
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            E-commerce sur mesure
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Intégration API
+                        </li>
+                    </ul>
+                </div>
+                <!-- UI/UX Design -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] rounded-lg p-4 lg:p-8 border border-[#333333] hover:border-primary transition-colors group">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-[#252525] rounded-lg mb-6 group-hover:bg-primary/10">
+                        <i class="ri-layout-4-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">UI/UX Design</h3>
+                    <p class="text-[#BBBBBB] mb-6">
+                        Création d'interfaces utilisateur intuitives et d'expériences utilisateur engageantes qui
+                        captivent votre audience.
+                    </p>
+                    <ul class="space-y-3 mb-4">
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Design d'interface moderne
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Prototypage interactif
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Tests utilisateurs
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Design System
+                        </li>
+                    </ul>
+                </div>
+                <!-- SEO Optimization -->
+                <div style="max-width: 380px;"
+                    class="mx-auto bg-[#1A1A1A] mx-auto rounded-lg p-4 lg:p-8 border border-[#333333] hover:border-primary transition-colors group">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-[#252525] rounded-lg mb-6 group-hover:bg-primary/10">
+                        <i class="ri-line-chart-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Optimisation SEO</h3>
+                    <p class="text-[#BBBBBB] mb-6">
+                        Amélioration de la visibilité de votre site web dans les moteurs de recherche pour attirer plus
+                        de trafic qualifié.
+                    </p>
+                    <ul class="space-y-3 mb-4">
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Audit SEO complet
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Optimisation technique
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Stratégie de contenu
+                        </li>
+                        <li class="flex items-center text-[#D1D1D1]">
+                            <i class="ri-checkbox-circle-line text-primary mr-3"></i>
+                            Suivi des performances
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-8">
+        <div class="container-fluid mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="w-full">
+                    <div class="bg-[#1A1A1A] p-8 rounded-lg h-full">
+                        <h2 class="text-2xl font-semibold text-white mb-6">Informations de contact</h2>
+                        <div class="flex flex-col md:flex-row mx-auto gap-8">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-[#252525] rounded-lg mr-4">
+                                    <i class="ri-map-pin-line ri-lg text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-medium mb-1">Localisation</div>
+                                    <p class="text-[#BBBBBB]">Kinshasa, République Démocratique du Congo</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-[#252525] rounded-lg mr-4">
+                                    <i class="ri-mail-line ri-lg text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-medium mb-1">Email</div>
+                                    <p class="text-[#BBBBBB]">
+                                        <a href="mailto:contact@samuelkulunga.com">contact@samuelkulunga.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-[#252525] rounded-lg mr-4">
+                                    <i class="ri-phone-line ri-lg text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-medium mb-1">Téléphone et WhatsaApp</div>
+                                    <p class="text-[#BBBBBB]">
+                                        <a href="tel:+243897325798" aria-label="numero de telephone de Samuel Kulunga">+243 89 7325 798</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <div class="text-white font-medium mb-4">Suivez-moi</div>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/samuel-kulunga-3b1b54189/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Profil linkedin de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-linkedin-fill ri-lg"></i>
+                                </a>
+                                <a href="https://web.facebook.com/people/Samuel-Kulunga/61558645498884/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Profil facebook de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-facebook-fill ri-lg"></i>
+                                </a>
+                                <a href="https://x.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Profil x de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-twitter-x-fill ri-lg"></i>
+                                </a>
+                                <a href="https://github.com/samuelkulunga" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Profil GitHub de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-github-fill ri-lg"></i>
+                                </a>
+                                <a href="https://g.co/kgs/XJ6k3NV" target="_blank"
+                                    aria-label="Profil my google business de Samuel Kulunga"
+                                    class="w-10 h-10 flex items-center justify-center bg-[#252525] text-white hover:bg-primary hover:text-[#121212] transition-colors rounded-full">
+                                    <i class="ri-google-fill ri-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-12 bg-[#090909]">
+        <div class="container-fluid mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <a href="/" class="text-white text-2xl font-bold mb-6 md:mb-0">
+                    <span class="gradient-text">Samuel KULUNGA</span>
+                </a>
+                <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+                    <a href="/" class="text-white">Accueil</a>
+                    <a href="/#skills" class="text-white">Compétences</a>
+                    <a href="#services" class="text-white">Services</a>
+                    <a href="/#projects" class="text-white">Projets</a>
+                    <a href="/#pricing" class="text-white">Tarif</a>
+                    <a href="#contact" class="text-white">Contact</a>
+                </nav>
+            </div>
+            <hr class="border-[#333333] mb-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white mb-4 md:mb-0">
+                    &copy; 2024 <a href="http://samuelkulunga.com">Samuel KULUNGA.</a> Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" aria-label="button up" id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-[#121212] rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 shadow-lg">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </a>
+
+    <script id="mobileMenuToggle">
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.querySelector('button.lg\\:hidden');
+            const mobileMenu = document.querySelector('.fixed.inset-0.bg-\\[\\#121212\\]');
+            menuButton.addEventListener('click', function () {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('flex');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    document.body.style.overflow = '';
+                }
+            });
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    document.body.style.overflow = '';
+                });
+            });
+        });
+    </script>
+
+    <script id="backToTopButton">
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.getElementById('backToTop');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 500) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                }
+            });
+            backToTopButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script id="testimonialsSlider">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.testimonials-track');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const prevButton = document.querySelector('.prev-button');
+            const nextButton = document.querySelector('.next-button');
+            let currentIndex = 0;
+            const cardWidth = 100 / (window.innerWidth >= 768 ? 3 : 1);
+            const maxIndex = cards.length - (window.innerWidth >= 768 ? 3 : 1);
+            function updateSliderPosition() {
+                track.style.transform = `translateX(-${currentIndex * cardWidth}%)`;
+            }
+            function updateButtonsState() {
+                prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
+                prevButton.style.cursor = currentIndex === 0 ? 'not-allowed' : 'pointer';
+                nextButton.style.opacity = currentIndex === maxIndex ? '0.5' : '1';
+                nextButton.style.cursor = currentIndex === maxIndex ? 'not-allowed' : 'pointer';
+            }
+            prevButton.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSliderPosition();
+                    updateButtonsState();
+                }
+            });
+            nextButton.addEventListener('click', () => {
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateSliderPosition();
+                    updateButtonsState();
+                }
+            });
+            window.addEventListener('resize', () => {
+                currentIndex = 0;
+                updateSliderPosition();
+                updateButtonsState();
+            });
+            updateButtonsState();
+        });
+    </script>
+
+    <script id="smoothScrolling">
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
