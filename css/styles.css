@@ -47,6 +47,14 @@ textarea:focus {
   box-shadow: 0 0 0 2px rgba(0, 255, 148, 0.2);
 }
 
+#hero {
+  background-color: #00ff94;
+  background-image: url('../images/bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container-fluid {
   width: 100%;
   margin-left: auto;
